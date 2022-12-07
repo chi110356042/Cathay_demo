@@ -14,4 +14,4 @@ This project explores the issue of data governance(DG) and focus on the topic of
 ## Description
 
 ### Create mockdata
-Download the create_mockdata.ipynb and upload it to your google drive, then you can use google colaboratory to run it.
+Download the `create_mockdata.ipynb` and upload it to your google drive, then you can use google colaboratory to run it.
