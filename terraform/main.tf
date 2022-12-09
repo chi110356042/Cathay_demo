@@ -63,5 +63,22 @@ resource "google_bigquery_datapolicy_data_policy" "pii_mask_default"{
         }
       }
 
+resource "google_storage_bucket" "auto-expire" {
+  name          = "auto-expiring-bucket"
+  location      = "US"
+  force_destroy = true
+
+  lifecycle_rule {
+    condition {
+      age = 3
+    }
+    action {
+      type = "Delete"
+    }
+  }
+}
+     
+
+
 
 
