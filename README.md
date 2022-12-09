@@ -27,7 +27,7 @@ Download the `create_mockdata.ipynb` and upload it to your google drive, then yo
 
 ### Setup by terraform
 
-`Commands to run`  
+**Commands to run**  
 
 `terraform init`  Add the necessary plugins and build the **.terraform** directory  
 
