@@ -26,8 +26,11 @@ This project explores the issue of **data governance(DG)** and focus on the topi
 Download the `create_mockdata.ipynb` and upload it to your google drive, then you can use google colaboratory to run it.
 
 ### Setup by terraform
-Run `terraform init` to add the necessary plugins and build the **.terraform** directory  
 
-Run `terraform plan` to create an execution plan (what terraform need to do in order to achieve the desired state)  
+`Commands to run`  
 
-Run `terraform apply` to execute a plan (configuration file)
+`terraform init`  Add the necessary plugins and build the **.terraform** directory  
+
+`terraform plan` Create an execution plan (what terraform need to do in order to achieve the desired state)  
+
+`terraform apply` Execute a plan (configuration file)
