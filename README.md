@@ -39,6 +39,9 @@ Download the `create_mockdata.ipynb` and upload it to your google drive, then yo
 
 **Commands to run**  
 
+Download the folder `terraform_demo` and you can run the command below.  
+
+
 `terraform init`  Add the necessary plugins and build the **.terraform** directory  
 
 `terraform plan` Create an execution plan (what terraform need to do in order to achieve the desired state)  
