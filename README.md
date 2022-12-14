@@ -47,3 +47,10 @@ Download the folder `terraform_demo` and you can run the command below.
 `terraform plan` Create an execution plan (what terraform need to do in order to achieve the desired state)  
 
 `terraform apply` Execute a plan (configuration file)
+
+Then, You succeeded in automating the process with terraform to get the BigQuery table with the policy tag on the column that needs to be masked
+![截圖 2022-12-14 下午5 25 59](https://user-images.githubusercontent.com/92499570/207559636-23f82f1f-273b-4a7a-ba3a-dd1b2b11783d.png)
+
+![截圖 2022-12-14 下午5 28 04](https://user-images.githubusercontent.com/92499570/207559677-acf32db1-6df7-4c55-a818-081b02c6bcd7.png)
+
+
