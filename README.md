@@ -25,7 +25,15 @@ This project explores the issue of **data governance(DG)** and focus on the topi
 ### Create mockdata
 Download the `create_mockdata.ipynb` and upload it to your google drive, then you can use google colaboratory to run it.
 
-### Setup by terraform
+### Terraform setup process
+
+* Create a taxonomy and a policy tag
+
+* Create data policies for policy tags
+
+* Create table and add policy tag to the company column   
+
+* Import data into table
 
 **Commands to run**  
 
