@@ -5,7 +5,13 @@ This project explores the issue of **data governance(DG)** and focus on the topi
 ## Overview
 <img width="642" alt="截圖 2022-12-07 下午4 12 33" src="https://user-images.githubusercontent.com/92499570/206124123-c0c195de-76c7-403a-bfd4-4bfdc93d54ad.png">
 
-## Manual setup process
+## Description
+
+### Create mockdata
+Download the `create_mockdata.ipynb` and upload it to your google drive, then you can use google colaboratory to run it.
+
+
+### Manual setup process
 * Create a taxonomy and a policy tag
 <img width="581" alt="截圖 2022-12-07 下午10 17 16" src="https://user-images.githubusercontent.com/92499570/206202541-9cbc76ec-9b4f-4dd6-8e5b-5e3179b3c8b4.png">
 
@@ -20,10 +26,6 @@ This project explores the issue of **data governance(DG)** and focus on the topi
 * Add the fine-grained reader role to view the protected column
 <img width="756" alt="截圖 2022-12-07 下午10 19 04" src="https://user-images.githubusercontent.com/92499570/206202951-b001701a-4e6a-4f94-8e43-ac3fdf29ac6f.png">
 
-## Description
-
-### Create mockdata
-Download the `create_mockdata.ipynb` and upload it to your google drive, then you can use google colaboratory to run it.
 
 ### Terraform setup process
 
@@ -36,6 +38,9 @@ Download the `create_mockdata.ipynb` and upload it to your google drive, then yo
 * Import data into table
 
 **Commands to run**  
+
+Download the folder `terraform_demo` and you can run the command below.  
+
 
 `terraform init`  Add the necessary plugins and build the **.terraform** directory  
 
