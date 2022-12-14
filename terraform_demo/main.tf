@@ -1,3 +1,18 @@
+resource "google_storage_bucket" "auto-expire" {
+  name          = "auto-expiring-bucket_demo"
+  location      = "US"
+  force_destroy = true
+
+  lifecycle_rule {
+    condition {
+      age = 3
+    }
+    action {
+      type = "Delete"
+    }
+  }
+}
+
 #Create data policy taxonomies
 resource "google_data_catalog_taxonomy" "new_taxonomy" {
   provider = google-beta
