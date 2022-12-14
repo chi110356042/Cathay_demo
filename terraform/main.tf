@@ -46,8 +46,8 @@ resource "google_data_catalog_taxonomy" "my_taxonomy" {
   provider = google-beta
   project=local.project_id
   region = "us"
-  display_name =  "1130"
-  description = "test"
+  display_name =  "demo"
+  description = "test_test"
   activated_policy_types = ["FINE_GRAINED_ACCESS_CONTROL"]
 }
 
@@ -77,6 +77,101 @@ resource "google_storage_bucket" "auto-expire" {
     }
   }
 }
+
+
+#create bigquery table
+resource "google_bigquery_dataset" "default" {
+  dataset_id                  = "chi_test"
+  location                    = "US"
+
+  labels = {
+    env = "chi_test1"
+  }
+}
+
+resource "google_bigquery_table" "default" {
+  dataset_id = google_bigquery_dataset.default.dataset_id
+  table_id   = "chi_test1"
+
+  schema = <<EOF
+[
+  {
+    "name": "int64_field_0",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "id",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "name",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "identity",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "policyTags": {
+        "names": [
+          "projects/datacloud-lab/locations/us/taxonomies/3757061504901883532/policyTags/3894882692732482027"
+        ]
+      }
+  },
+  {
+    "name": "birth",
+    "type": "DATE",
+    "mode": "NULLABLE",
+    "policyTags": {
+        "names": [
+          "projects/datacloud-lab/locations/us/taxonomies/3757061504901883532/policyTags/3894882692732482027"
+        ]
+      }
+  },
+  {
+    "name": "phone",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "region",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "policyTags": {
+        "names": [
+          "projects/datacloud-lab/locations/us/taxonomies/3757061504901883532/policyTags/3894882692732482027"
+        ]
+      }
+  },
+  {
+    "name": "crime",
+    "type": "BOOLEAN",
+    "mode": "NULLABLE",
+    "policyTags": {
+        "names": [
+          "projects/datacloud-lab/locations/us/taxonomies/3757061504901883532/policyTags/6090648724365740735"
+        ]
+      }
+  }
+]
+EOF
+
+  #external_data_configuration {
+  #  autodetect    = true
+  #  source_format = "CSV"
+
+  #  csv_options {
+  #    quote = ""
+  #  }
+
+  #  source_uris = [
+  #    "https://storage.cloud.google.com/chi110356042/mock1212.csv"
+  #  ]
+  #}
+}
+
      
 
 
