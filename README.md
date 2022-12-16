@@ -35,7 +35,6 @@ Download the `create_mockdata.ipynb` and upload it to your google drive, then yo
 
 * Create table and add policy tag to the company column   
 
-* Import data into table
 
 **Commands to run**  
 
