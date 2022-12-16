@@ -39,7 +39,7 @@ Download the `create_mockdata.ipynb` and upload it to your google drive, then yo
 
 **Commands to run**  
 
-Download the folder `terraform_demo` and verify your `project_id` then you can run the commands below on the cloud shell.  
+Download the folder `terraform_demo` and verify your `project_id` and you can run the commands below on the cloud shell.  
 
 >`terraform init`  Add the necessary plugins and build the **.terraform** directory  
 
