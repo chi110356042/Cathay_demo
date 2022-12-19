@@ -82,7 +82,7 @@ resource "google_bigquery_datapolicy_data_policy" "senitive_policy" {
 
 #create bigquery table
 resource "google_bigquery_dataset" "default" {
-  dataset_id                  = "demo_final_dataset"
+  dataset_id                  = "demo"
   location                    = "US"
 
   labels = {
@@ -92,7 +92,7 @@ resource "google_bigquery_dataset" "default" {
 
 resource "google_bigquery_table" "default" {
   dataset_id = google_bigquery_dataset.default.dataset_id
-  table_id   = "demo_final_table"
+  table_id   = "demo_table"
 
   schema = <<EOF
 [
