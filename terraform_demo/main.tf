@@ -135,10 +135,6 @@ resource "google_bigquery_table" "default" {
     "name": "phone",
     "type": "INTEGER",
     "mode": "NULLABLE"
-    "policyTags": {
-        "names": [
-          "${google_data_catalog_policy_tag.basic_policy_tag_contact.id}"
-        ]
       }
   },
   {
